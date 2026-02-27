@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NED.Studio </title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      background: rgba(2,6,23,0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #1f2937;
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav h1 { color: #fff; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: #fff; }
+
+    .hero {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
+    .hero p { color: var(--muted); margin-bottom: 20px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    section h3 { font-size: 1.8rem; margin-bottom: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #1f2937;
+      color: var(--muted);
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #1f2937;
+      background: #020617;
+      color: var(--text);
+    }
+    button {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: var(--primary);
+      color: white;
+      cursor: pointer;
+    }
+    button:hover { opacity: 0.9; }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+<h1>Contact</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="music.html">Music </a>
+    <a href="artists.html">Artists</a>
+    <a href="contact.html">Contact</a>
+   <a href="about.html">About </a>
+   <a href="music hub.html">Music Hub </a>
+   <section id="contact">
+      <h3>Contact Us</h3>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="Artist name" placeholder="Your Artist" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+         <input type="Phone Number" placeholder="Your Phone Number" required />
+         <button onclick="openTab()">Become An Artist</button>
+      </form>
+      <p id="msg" style="margin-top:10px;"></p>
+    </section>
+    <main>
+    <h2>Write About Ned.com</h2>
+    <textarea id="textInput" placeholder="Write something..."></textarea><br>
+    <button onclick="addText('textInput','texts')">Send Message</button>
+    <div id="Send Message"></div>
+  </main>
+ <head>
+  <title>Tab Button Example</title>
+</head>
+<body>
+
+<script>
+function openTab() {
+  window.open("Become  a Artist.html", "_blank");
+}
+</script>
+
+</body>
+</html>
+
